@@ -1,0 +1,15 @@
+title 0.6 Single Page App - New Note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over browser:
+POST contains JSON payload with new note
+{content: "note", date: "2020-06-30T00:05:41.299Z"}
+end note
+
+server-->browser: {"message":"note created"}
+
+note over browser:
+client-side JS takes care of extracting note from input element
+and adding the note to the DOM
+end note
